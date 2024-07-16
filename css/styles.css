@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-position: top;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.order-summary_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(225, 100%, 98%);
+  max-width: 45rem;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.order-summary-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.order-summary-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5.2rem 4.5rem;
+}
+
+.price-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 5.5rem;
+}
+
+.price-info_plan {
+  display: flex;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 2.2rem;
+  color: hsl(223, 47%, 23%);
+  text-align: center;
+  padding-bottom: 3.5rem;
+  font-weight: 900;
+}
+
+.card-paragraph {
+  font-size: 1.6rem;
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+  align-self: center;
+  text-align: center;
+  display: flex;
+  padding-bottom: 4.5rem;
+}
+
+.proceed-button {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  font-weight: 700;
+  border-radius: 1rem;
+  padding: 1.7rem 0;
+  margin-bottom: 3.5rem;
+  box-shadow: 0 1rem 10px hsla(224, 23%, 55%, 0.4);
+  transition: all 0.3s ease;
+}
+
+.proceed-button:hover {
+  background-color: hsla(245, 75%, 52%, 0.6);
+}
+
+.cancel-button {
+  font-size: 1.4rem;
+  text-align: center;
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  align-self: center;
+  transition: all 0.3s ease;
+}
+
+.cancel-button:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.price-text {
+  padding-left: 2rem;
+}
+
+.price-text_anual {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
+}
+
+.price-text_inner {
+  color: hsl(224, 23%, 55%);
+  font-size: 1.4rem;
+}
+
+.price-info_change a {
+  font-size: 1.4rem;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.price-info_change a:hover {
+  color: hsla(245, 75%, 52%, 0.6);
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  body {
+    background-image: url("../images/pattern-background-mobile.svg");
+    height: auto;
+    padding: 7rem 2.2rem;
+  }
+}
